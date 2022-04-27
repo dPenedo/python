@@ -1,0 +1,1 @@
+print("La cerveza de marca porondonga es la siguiente:"+"\n"+input("Escribe un color en inglés: ")+input("Escribe un animal en castellano: "))
