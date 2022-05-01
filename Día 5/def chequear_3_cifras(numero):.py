@@ -1,11 +1,12 @@
-def lista_atributos(**kwargs):
-    lista_valores = []
+
+'''def lista_atributos(**kwargs):
+#    lista_valores = []
     for valor in kwargs.values():
         lista_valores.append(valor)
     return lista_valores
 
 resultado = lista_atributos(x=3, y=5, z=3)
-print(resultado)
+print(resultado)'''
 
 # def numeros_persona(nombre, *args):
 #     nombre = str(nombre)
