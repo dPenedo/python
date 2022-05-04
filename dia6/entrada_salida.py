@@ -2,17 +2,13 @@ mi_archivo = open('prueba.txt')
 
 una_linea = mi_archivo.readline()
 
-print(una_linea)
-una_linea = mi_archivo.readline()
 
-print(una_linea)
-una_linea = mi_archivo.readline()
+todas = mi_archivo.readlines()
+print(todas)
 
 
-print(una_linea)
-
-
-
+#for l in mi_archivo:
+#    print("Aquí dice: "+l)
 
 
 
