@@ -3,18 +3,24 @@ import os
 from re import A
 ruta_de_acceso = Path('/home/dani/Documentos/python/dia6/Recetas')
 
-def mostrar_recetas():
-    for txt in ruta_de_acceso.glob("**/*.txt"):
+
+def mostrar_recetas_una_categoria (categoria):
+    ruta_categoria = Path("/home/dani/Documentos/python/dia6/Recetas/", categoria)
+    for txt in ruta_categoria.glob("**/*.txt"):
         print(txt.stem)
+
 #Falta que incluya la categoria
-def eliminar_receta():
-    print('Estas son las recetas que hay: ')
-    mostrar_recetas()
+def eliminar_receta(categoria):
+    ruta_categoria = Path("/home/dani/Documentos/python/dia6/Recetas/", categoria)
+    print('Estas son las recetas que hay en la categoria: ')
+    mostrar_recetas_una_categoria (categoria)
     receta = input('¿Qué receta quieres eliminar?\n (Escribe el nombre, respetando las minúsculas y mayúsculas y presiona enter para eliminar)')
     texto_receta = str(receta+".txt")
-    Path('/home/dani/Documentos/python/dia6/Recetas/',*, texto_receta).unlink()
+    ruta_receta = Path("/home/dani/Documentos/python/dia6/Recetas/", categoria, texto_receta)
+    ruta_receta.unlink()
+    print("Eliminaste la siguiente receta" + receta)
 
-eliminar_receta()
+eliminar_receta('Carnes')
 
 
 
