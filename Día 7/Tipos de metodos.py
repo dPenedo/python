@@ -29,12 +29,14 @@ class Pajaro:
     def mirar(): #No puede cambiar atributos de instancia ni de clase
         print("El pájaro mira")                          # self.color = 'rojo' No funcionaria
                                                        # cls.alas = 2 No funciona      
-
+print("")
+pintar_negro()
 
 Pajaro.mirar()
 
 Pajaro.poner_huevos(3)
-
+Pajaro1 = Pajaro("rojo", "zorzal")
+print(Pajaro1)
 
 
 # piolin = Pajaro('amarillo', 'canario')

@@ -1,7 +1,7 @@
 class Pajaro: 
 
     alas = True 
-
+    
     def __init__(self, color, especie): 
         self.color = color
         self.especie = especie
@@ -16,6 +16,9 @@ piolin = Pajaro('amarillo', 'canario')
 
 piolin.piar()
 piolin.volar(59)
+
+print("")
+print("")
 
 
 

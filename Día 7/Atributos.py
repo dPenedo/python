@@ -20,7 +20,6 @@ print(mi_pajaro.alas) #imprime el atributo de clase en la instancia
 
 
 
-
 #     def __init__(self, mi_parametro):
 #         self.atributo = mi_parametro
 
