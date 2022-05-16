@@ -8,3 +8,6 @@ def una_funcion():
     print(numero1)
 
 una_funcion()
+d= range(1, 10)
+for sdin in d:
+    print(f"{sdin}, el mejor número")

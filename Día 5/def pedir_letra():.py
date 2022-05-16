@@ -12,3 +12,7 @@ def chequear_letra(letra, palabra):
 letra='a'
 palabra='iguana'
 chequear_letra(letra,palabra)
+
+lala = [123,123,23,23,]
+for l in lala:
+    print(f"numerro {l}")

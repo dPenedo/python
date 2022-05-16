@@ -122,14 +122,6 @@ def volver_inicio():
         eleccion_regresar = input("\n Presiona V para volver al menú:  ")
 
 
-
-    # eleccion_menu = 'x'
-    # while not eleccion_menu.isnumeric() or int(eleccion_menu) not in range(1,7):
-        
-    #     eleccion_menu = input()
-    # return (eleccion_menu)
-
-
 finalizar_programa = False
 while not finalizar_programa:
     menu = comenzar()
