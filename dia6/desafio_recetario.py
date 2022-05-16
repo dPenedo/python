@@ -1,19 +1,7 @@
 from os import system
 from pathlib import Path
 import os
-
-ruta_de_acceso = Path('/home/dani/Documentos/python/dia6/Recetas')
-
-def contar_recetas():
-    cuenta = 0
-    for txt in ruta_de_acceso.glob("**/*.txt"):
-        cuenta +=1
-    return(cuenta)
-
-
-def comenzar():
-    system('clear')
-    contar_recetas()
+ruta_de_acceso = Path('/home/dani/Documentos/python/dia6/Recetas') def contar_recetas(): cuenta = 0 for txt in ruta_de_acceso.glob("**/*.txt"): cuenta +=1 return(cuenta) def comenzar(): system('clear') contar_recetas()
     total_recetas = contar_recetas()
     print('*'*50)
     print('*'*10 +"¡Bienvenido/a al recetario!"+'*'*10)

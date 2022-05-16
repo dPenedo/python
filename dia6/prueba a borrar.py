@@ -16,4 +16,44 @@ def crear_nombre_receta(categoria):
     nuevo.close
     print(f'La receta "{nombre}" ha sido creada')    
 
+Path('/home/dani/Documentos/python/dia6/Recetas'),
 crear_nombre_receta('Carnes')
+
+
+jkl klñq wew iu iu iu  hjk iu pu uih p 9u8 puih  e
+print("r")
+
+
+print("r")
+print("r")
+print("r")
+print("r")
+
+pssarint("r")
+pssarint("r")
+pssarint("r")
+pssarint("r")
+pssarint("r")
+pssarint("r")
+pssarint("r")
+pssarint("r"r)
+
+pssarint("r")
+pssarint("r")
+kj
+pssairrrrrrrrrrrrrrrrrnt("r")
+pssairrrrrrrrrrrrrrrrrnt("r")
+pssairrrrrrrrrrrrrrrrrnt("r")
+pssairrrrrrrrrrrrrrrrrnt("r")
+pssairrrrrr
+
+ssairrrrrrrrrrrrrrrrrnt("r")
+pssairsdjrrrrrrrrrrrrrrrrnt("r")
+pssairrrrrrrrrrrrrrrrrnt("r")
+pssairrrrsd123456789rrrrrrrrrrrrrnt("r
+ooooo
+
+
+dspssairrrrrrrrrrrrrrrrrnt("r")
+hsdkjkissairrrrrrrrrrrrrrrrrnt("r")
+pssairrrrrrrrrrrrrrrrrnt("r")
