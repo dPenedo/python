@@ -1,4 +1,8 @@
 # Este archivo contiene las funciones
+from numeros import perfumeria
+from numeros import farmacia
+from numeros import cosmetica 
+from os import system
 
 
 def comenzar():
@@ -6,24 +10,26 @@ def comenzar():
     seccion=input('(Presione el número de la sección y la tecla Enter)\n')
     return int(seccion)
 
+def mostrar_turno(x):
+    print(f'su número de turno es el {x}')
 
-    #if seccion == 1:
-    #    return int(seccion)
-    #elif seccion ==2:
-    #    return int(seccion)
-    #elif seccion == 3:
-    #    return 3
+fin = False
+while not fin:
+    eleccion = comenzar()
 
-#finalizar=False
-#while not finalizar:
-eleccion = comenzar()
 if eleccion == 1:
-    perfumeria()
+    num_perfume = perfumeria()
+    nn = next(num_perfume)
+    print(f'Su número de turno es el {nn}')
+    
 elif eleccion == 2:
     farmacia()
 elif eleccion == 3:
     cosmetica()
-elif eleccion ==4:
-    finalizar=True
-        
+else:
+    fin=True
 
+
+#def mostrar_numero(turno)
+#    print(turno)
+#mostrar_numero(turno)

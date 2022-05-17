@@ -1,9 +1,10 @@
 # Este modulo contiene los generadores y decoradores
-
-
 def perfumeria():
-    print('la movida')
+    for n in range(1,1000):
+        yield f'P -{n}'
 def farmacia():
-    print('farrmac')
+    for n in range(1,1000):
+        yield f'F -{n}'
 def cosmetica():
-    print('cosmonautik')
+    for n in range(1,1000):
+        yield f'C -{n}'
