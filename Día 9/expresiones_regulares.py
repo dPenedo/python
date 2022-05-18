@@ -6,7 +6,7 @@ texto = "No atendemos los martes por la tarde."
 texto1 = "No atendemos los martes por la tarde en la casa."
 
 #buscar = re.search(r'[^\s]', texto)
-buscar = re.findall(r'[^\s]+', texto)
+buscar = re.findall(r'[^\s]+', texto)##
 
 print(''.join(buscar))
 

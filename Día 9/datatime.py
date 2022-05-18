@@ -6,7 +6,7 @@ from datetime import date #
 despierta = datetime(2022, 10, 5, 7, 30)
 duerme = datetime(2022, 10, 5, 23, 35)
 
-vigilia = duerme - despierta
+vigilia = duerme - despierta #
 
 print(vigilia)
 
