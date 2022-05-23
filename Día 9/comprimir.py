@@ -3,16 +3,19 @@ import shutil
 
 
 
+
 shutil.unpack_archive('Todo_comprimido.zip', 'Extraccion_terminada', 'zip')
 
 
 
+Proyecto+Dia+9.zip
 
-#carpeta_origen = '/home/dani/Documentos/python/Día 9/Carpeta_compri'
-#
-#archivo_destino = 'Todo_comprimido'
-#
-#shutil.make_archive(archivo_destino, 'zip', carpeta_origen)
+carpeta_origen = '/home/dani/Descarga/'
+
+
+archivo_destino = 'Todo_comprimido'
+
+shutil.make_archive(archivo_destino, 'zip', carpeta_origen)
 
 
 

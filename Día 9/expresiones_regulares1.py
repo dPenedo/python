@@ -1,5 +1,8 @@
 import re
 
+patron = r"\N+\w{3}+-+\d{5}"
+
+
 patron = r''#La r antes de las comillas indica que es un patron regular
 patron = r'\d\d\d-\d\d\d-\d\d\d\d' #Tres dígitos al comienzo, guión, tres dígitos más, guión y cuatro dígitos
 patron = r'\d{3}-\d{3}-\d{4}' #Igual que el anterior
