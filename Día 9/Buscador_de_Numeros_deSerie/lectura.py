@@ -20,11 +20,7 @@ def buscador(documento):
 
 def recorrer_archivos():
     for root, dirs, archivo in os.walk(ruta):
-        resultado = buscador(archivo)
-        if resultado:
-            print(f'El archivo es {archivo}, y el patron es {patron}')
-        else:
-            pass
+        print(archivo)
 #buscador('text.txt')
 
 recorrer_archivos()

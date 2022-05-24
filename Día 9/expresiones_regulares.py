@@ -1,7 +1,6 @@
 import re
 
 
-
 texto = "No atendemos los martes por la tarde."
 texto1 = "No atendemos los martes por la tarde en la casa."
 
@@ -9,8 +8,6 @@ texto1 = "No atendemos los martes por la tarde en la casa."
 buscar = re.findall(r'[^\s]+', texto)##
 
 print(''.join(buscar))
-
-
 
 
 #buscar = re.search(r'lunes|martes', texto)
