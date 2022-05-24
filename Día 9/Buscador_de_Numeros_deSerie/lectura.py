@@ -2,28 +2,32 @@ import os
 import re
 
 
-ruta = '/home/dani/Documentos/python/Día 9/Mi_Gran_Directorio/'
+ruta = '/home/dani/Documentos/python/Día 9/Buscador_de_Numeros_deSerie/Mi_Gran_Directorio/'
 
-patron = 'cinco'
-patron = r"w{5}"
+patron = r"N+\w{3}-\d{5}"
 
+#Buscador
 def buscador(documento):
-    archivo = open(documento, 'r')
-    texto = archivo.readlines()
+    arch = open(documento, 'r')
+    texto = arch.readlines()
     texto_str = str(texto)
-    archivo.close()
-    if patron in texto_str:
-        print(patron)
-        print(f"Y este es el textote{texto_str} en {documento}")
+    busqueda = re.search(patron, texto_str)
+    if busqueda:
+        return(str(busqueda.group(0)))
     else:
-        print("No se encuentra disponiblot")
-        print(f"Y este es el textote{texto_str} en {documento}")
+        pass
 
 
+def recorrer_archivos():
+    for root, dirs, archivo in os.walk(ruta):
+        resultado = buscador(archivo)
+        if resultado:
+            print(f'El archivo es {archivo}, y el patron es {patron}')
+        else:
+            pass
+#buscador('text.txt')
 
-buscador('text.txt')
-
-
+recorrer_archivos()
 
 
 

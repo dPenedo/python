@@ -15,6 +15,5 @@ def leer(documento):
 
 '''
 
-
 duracion = int(timeit.timeit(stmt, setup))
 print(duracion)
