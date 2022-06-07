@@ -10,7 +10,6 @@ print(imagenes)
 
 
 
-
 imagen_curso_1 = requests.get(imagenes) 
 
 
@@ -24,15 +23,19 @@ f.close()
 
 
 
-
 #for i in imagenes:
 #    print(i)
-
+28
 
 
 #print(sopa.select('title')[0].getText())
-#
 #parrafo_especial = sopa.select('p')[6].getText()
 #print(parrafo_especial)
-##print(resultado.text)
-#
+
+
+
+
+
+
+
+
