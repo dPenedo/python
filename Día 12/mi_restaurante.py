@@ -1,6 +1,7 @@
 from tkinter import *
 import random
 import datetime
+from tkinter import filedialog, messagebox
 
 operador=''
 
@@ -131,6 +132,43 @@ def recibo():
     texto_recibo.insert(END, f'Impuestos:\t\t\t{var_impuestos.get()}\n')
     texto_recibo.insert(END, f'Total:\t\t\t{var_total.get()}\n')
 
+
+def guardar():
+    info_recibo = texto_recibo.get(1.0, END)
+    archivo = filedialog.asksaveasfile(mode='w', defaultextension='.txt')
+    archivo.write(info_recibo)
+    archivo.close()
+    messagebox.showinfo('Información', 'Su recibo ha sido guardado')
+
+
+def resetear():
+    texto_recibo.delete(0.1, END)
+    for texto in texto_comida:
+        texto.set('0')
+    for texto in texto_bebida:
+        texto.set('0')
+    for texto in texto_postres:
+        texto.set('0')
+    for cuadro in cuadros_comida:
+        cuadro.config(state=DISABLED)
+    for cuadro in cuadros_bebida:
+        cuadro.config(state=DISABLED)
+    for cuadro in cuadros_postres:
+        cuadro.config(state=DISABLED)
+
+    for v in variables_comida:
+        v.set(0)
+    for v in variables_bebida:
+        v.set(0)
+    for v in variables_postre:
+        v.set(0)
+
+    var_costo_comida.set('')
+    var_costo_bebida.set('')
+    var_costo_postres.set('')
+    var_subtotal.set('')
+    var_impuestos.set('')
+    var_total.set('')
 
 # iniciar tkinter
 aplicacion = Tk()
@@ -421,6 +459,8 @@ for boton in botones:
     botones_creados.append(boton)
 botones_creados[0].config(command=total)
 botones_creados[1].config(command=recibo)
+botones_creados[2].config(command=guardar)
+botones_creados[3].config(command=resetear)
 
 
 # Area de recibo
